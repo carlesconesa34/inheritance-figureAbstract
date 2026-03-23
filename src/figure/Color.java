@@ -1,5 +1,12 @@
 package figure;
 
-public class Color {
-    
+public enum Color {
+    CYAN,
+    YELLOW,
+    MAGENTA,
+    BLACK;
+
+    Color() {
+
+    }
 }
