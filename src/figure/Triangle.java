@@ -95,7 +95,6 @@ public class Triangle extends Figure {
         this.isRounded = isRounded;
     }
 
-
     /**
      * Module.
      *
@@ -121,7 +120,7 @@ public class Triangle extends Figure {
      * @return perimeter
      */
     public double perimeter() {
-        return 2 * (base + height);
+        return base * 3;
     }
 
     /**
