@@ -5,7 +5,7 @@
  *
  * This is free software, licensed under the MIT license.
  */
-package figure;
+package abstractFigure;
 
 /**
  * An enum class to describe the color of a figure, which can be cyan, wellow, magenta or black.

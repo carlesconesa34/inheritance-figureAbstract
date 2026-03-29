@@ -6,7 +6,7 @@
  * This is free software, licensed under the MIT license.
  */
 
-package figure;
+package abstractFigure;
 
 /**
  * A class to generally describe a figure, including the module, area and perimeter values.
@@ -15,7 +15,7 @@ package figure;
  * @version 1.0
  * @since 2026-03-29
  */
-public class Figure {
+public abstract class Figure {
     
     // Attributes
 
@@ -136,12 +136,18 @@ public class Figure {
 
     /**
      * Calculates the module of a figure.
-     *
-     * @return 1 by a default figure
      */
-    public double module() {
-        return 1;
-    }
+    public abstract double module();
+
+    /**
+     * Calculates the area of a figure.
+     */
+    public abstract double area();
+
+    /**
+     * Calculates the perimeter of a figure.
+     */
+    public abstract double perimeter();
 
     /**
      * Returns a string representation of a figure.

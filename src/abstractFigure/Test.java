@@ -6,7 +6,7 @@
  * This is free software, licensed under the MIT license.
  */
 
-package figure;
+package abstractFigure;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -6,7 +6,7 @@
  * This is free software, licensed under the MIT license.
  */
 
-package figure;
+package abstractFigure;
 
 /**
  * A class to describe a square, which extends the Rectangle class.
