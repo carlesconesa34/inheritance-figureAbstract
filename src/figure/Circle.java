@@ -30,4 +30,14 @@ public class Circle extends Oval {
     public Circle(int x, int y, Color color, boolean isFilled, int radius) {
         super(x, y, color, isFilled, radius, radius);
     }
+
+    /**
+     * Returns a string representation of a circle.
+     *
+     * @return a string representation of a circle
+     */
+    @Override
+    public String toString() {
+        return "Circle{" + super.toString() + "}";
+    }
 }

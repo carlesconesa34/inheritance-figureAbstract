@@ -30,4 +30,14 @@ public class Square extends Rectangle {
     public Square(int x, int y, Color color, boolean isFilled, boolean isRounded, int side) {
         super(x, y, color, isFilled, isRounded, side, side);
     }
+
+    /**
+     * Returns a string representation of a square.
+     *
+     * @return a string representation of a square
+     */
+    @Override
+    public String toString() {
+        return "Square{" + super.toString() + "}";
+    }
 }
