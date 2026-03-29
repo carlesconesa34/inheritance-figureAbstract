@@ -1,1 +1,1 @@
-# inheritance-figure
+# inheritance-abstractFigure

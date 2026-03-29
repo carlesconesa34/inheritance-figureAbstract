@@ -6,7 +6,7 @@
  * This is free software, licensed under the MIT license.
  */
 
-package figure;
+package abstractFigure;
 /**
  * A class to describe a rectangle, including the module, area and perimeter values.
  *
