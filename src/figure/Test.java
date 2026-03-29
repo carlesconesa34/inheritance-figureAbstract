@@ -19,7 +19,13 @@ import java.util.List;
  * @since 2026-03-29
  */
 public class Test {
-
+    /**
+     * Tests all Figure subclasses by instantiating them with both constructors,
+     * printing their info, resetting their position, and calculating their
+     * module, area and perimeter individually.
+     *
+     * @param args command-line arguments
+     */
     public static void main(String[] args) {
 
         System.out.println("=== INSTANCIACIÓ AMB CONSTRUCTOR PARAMÈTRIC (x, y, ...) ===\n");
