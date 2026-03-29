@@ -8,7 +8,7 @@
 
 package figure;
 /**
- * A class to describe a triangle, including the module, area and perimeter values.
+ * A class to describe a triangle, including the module, area and perimeter values. Assume only equilateral triangles.
  *
  * @author Carles Conesa Mañosa
  * @version 1.0
