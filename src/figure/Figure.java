@@ -44,6 +44,15 @@ public class Figure {
         this.isFilled = isFilled;
     }
 
+    /**
+     * Default constructor.
+     * Initializes all attributes with default values.
+     */
+    public Figure(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
     // Getters and Setters
     
     /**

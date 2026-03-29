@@ -32,11 +32,21 @@ public class Rectangle extends Figure {
      * Default constructor.
      * Initializes all attributes with default values.
      */
-    public Rectangle(int x, int y, Color color, boolean isFilled, int base, int height, boolean isRounded) {
+    public Rectangle(int x, int y, Color color, boolean isFilled, boolean isRounded, int base, int height) {
         super(x, y, color, isFilled);
         this.base = base;
         this.height = height;
         this.isRounded = isRounded;
+    }
+
+    /**
+     * Default constructor.
+     * Initializes all attributes with default values.
+     */
+    public Rectangle(int x, int y, int base, int height) {
+        super(x, y);
+        this.base = base;
+        this.height = height;
     }
 
     // Getters and Setters

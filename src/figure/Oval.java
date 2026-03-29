@@ -35,6 +35,16 @@ public class Oval extends Figure {
         this.radius2 = radius2;
     }
 
+    /**
+     * Default constructor.
+     * Initializes all attributes with default values.
+     */
+    public Oval(int x, int y, int radius1, int radius2) {
+        super(x, y);
+        this.radius1 = radius1;
+        this.radius2 = radius2;
+    }
+
     // Getters and Setters
     
     /**

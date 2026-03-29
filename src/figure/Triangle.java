@@ -39,6 +39,16 @@ public class Triangle extends Figure {
         this.isRounded = isRounded;
     }
 
+        /**
+     * Default constructor.
+     * Initializes all attributes with default values.
+     */
+    public Triangle(int x, int y, int base, int height) {
+        super(x, y);
+        this.base = base;
+        this.height = height;
+    }
+
     // Getters and Setters
     
     /**

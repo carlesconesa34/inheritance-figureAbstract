@@ -22,8 +22,8 @@ public class Square extends Rectangle {
      * Default constructor.
      * Initializes all attributes with default values.
      */
-    public Square(int x, int y, int radius) {
-        super(x, y, radius, radius);
+    public Square(int x, int y, int side) {
+        super(x, y, side, side);
     }
     
     /**
@@ -35,7 +35,7 @@ public class Square extends Rectangle {
      * @param isFilled description of parameter
      * @param radius description of parameter
      */
-    public Square(int x, int y, Color color, boolean isFilled, int radius) {
-        super(x, y, color, isFilled, radius, radius);
+    public Square(int x, int y, Color color, boolean isFilled, boolean isRounded, int side) {
+        super(x, y, color, isFilled, isRounded, side, side);
     }
 }
