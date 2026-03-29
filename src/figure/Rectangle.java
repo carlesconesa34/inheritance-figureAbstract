@@ -1,31 +1,31 @@
 /*
- * Rectangle.java 2026-03-24
- *
+ * Rectangle.java 2026-03-29
  *
  * ©Copyright 2026 Carles Conesa Mañosa <a251158cc@correu.escoladeltreball.org>
  *
- * This is free software, licensed under the GNU General Public License v3.
- * See http://www.gnu.org/licenses/gpl.html for more information.
+ * This is free software, licensed under the MIT license.
  */
 
 package figure;
 /**
- * Class description
+ * A class to describe a rectangle, including the module, area and perimeter values.
+ *
  *
  * @author Carles Conesa Mañosa
  * @version 1.0
- * @since 2026-03-24
+ * @since 2026-03-29
  */
 public class Rectangle extends Figure {
     
     // Attributes
-    /** Description of attribute2 */
+
+    /** The base of a rectangle */
     private int base;
 
-    /** Description of attribute2 */
+    /** The height of a rectangle */
     private int height;
 
-    /** Description of attribute2 */
+    /** A value which says whether a rectangle is rounded or not */
     private boolean isRounded = false;
     
     /**
@@ -40,8 +40,7 @@ public class Rectangle extends Figure {
     }
 
     /**
-     * Default constructor.
-     * Initializes all attributes with default values.
+     * Parameterized constructor.
      */
     public Rectangle(int x, int y, int base, int height) {
         super(x, y);
@@ -52,36 +51,36 @@ public class Rectangle extends Figure {
     // Getters and Setters
     
     /**
-     * Gets the value of the base.
+     * Gets the value of the base of a rectangle.
      *
-     * @return base
+     * @return the base of a rectangle
      */
     public int getBase() {
         return base;
     }
     
     /**
-     * Sets the value of the base.
+     * Sets the value of the base of a rectangle
      *
-     * @param base the base to set
+     * @param base the base of a rectangle to set
      */
     public void setBase(int base) {
         this.base = base;
     }
 
     /**
-     * Gets the value of the height.
+     * Gets the value of the height of a rectangle.
      *
-     * @return the height
+     * @return the height of a rectangle
      */
     public int getHeight() {
         return height;
     }
     
     /**
-     * Sets the value of the height.
+     * Sets the value of the height of a rectangle
      *
-     * @param height the height to set
+     * @param height the height of a rectangle to set
      */
     public void setHeight(int height) {
         this.height = height;
@@ -107,9 +106,9 @@ public class Rectangle extends Figure {
 
 
     /**
-     * Module.
+     * Calculates the module of a rectangle.
      *
-     * @return module
+     * @return the module of a rectangle
      */
     @Override
     public double module() {
@@ -117,27 +116,27 @@ public class Rectangle extends Figure {
     }
 
     /**
-     * Area.
+     * Calculates the area of a rectangle.
      *
-     * @return area
+     * @return the area of a rectangle
      */
     public double area() {
         return base * height;
     }
 
     /**
-     * Perimeter.
+     * Calculates the perimeter of a rectangle.
      *
-     * @return perimeter
+     * @returnt the perimeter of a rectangle
      */
     public double perimeter() {
         return 2 * (base + height);
     }
 
     /**
-     * Returns a string representation of an oval.
+     * Returns a string representation of a rectangle.
      *
-     * @return a string representation of an oval
+     * @return a string representation of a rectangle
      */
     @Override
     public String toString() {

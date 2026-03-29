@@ -1,33 +1,31 @@
 /*
- * Figure.java 2026-03-23
- *
+ * Figure.java 2026-03-29
  *
  * ©Copyright 2026 Carles Conesa Mañosa <a251158cc@correu.escoladeltreball.org>
  *
- * This is free software, licensed under the GNU General Public License v3.
- * See http://www.gnu.org/licenses/gpl.html for more information.
+ * This is free software, licensed under the MIT license.
  */
 
 package figure;
 
 /**
- * Class description
+ * A class to generally describe a figure, including the module, area and perimeter values.
  *
  * @author Carles Conesa Mañosa
  * @version 1.0
- * @since 2026-03-23
+ * @since 2026-03-29
  */
 public class Figure {
     
     // Attributes
 
-    /** X */
+    /** X coordinate */
     private int x;
     
-    /** Y */
+    /** Y coordinate */
     private int y;
     
-    /** Color */
+    /** Color of a figure */
     private Color color = Color.BLACK;
 
     /** isFilled */
@@ -45,8 +43,7 @@ public class Figure {
     }
 
     /**
-     * Default constructor.
-     * Initializes all attributes with default values.
+     * Parametized constructor.
      */
     public Figure(int x, int y) {
         this.x = x;
@@ -56,54 +53,54 @@ public class Figure {
     // Getters and Setters
     
     /**
-     * Gets the value of x.
+     * Gets the value of the x coordinate.
      *
-     * @return x
+     * @return the x coordinate
      */
     public int getX() {
         return x;
     }
 
     /**
-     * Sets the value of x.
+     * Sets the value of the x coordinate.
      *
-     * @param x the x to set
+     * @param x the x coordinate to set
      */
     public void setX(int x) {
         this.x = x;
     }
 
     /**
-     * Gets the value of y.
+     * Gets the value of the y coordinate.
      *
-     * @return y
+     * @return  the y coordinate
      */
     public int getY() {
         return y;
     }
     
     /**
-     * Sets the value of y.
+     * Sets the value of the y coordinate.
      *
-     * @param y the y to set
+     * @param y the y coordinate to set
      */
     public void setY(int y) {
         this.y = y;
     }
 
     /**
-     * Gets the value of color.
+     * Gets the value of the color of a figure.
      *
-     * @return color
+     * @return the color of a figure.
      */
     public Color getColor() {
         return color;
     }
     
     /**
-     * Sets the value of color.
+     * Sets the value of the color of a figure.
      *
-     * @param color the color to set
+     * @param color the color of a figure to set
      */
     public void setColor(Color color) {
         this.color = color;
@@ -112,7 +109,7 @@ public class Figure {
     /**
      * Gets the value of isFilled.
      *
-     * @return isFilled
+     * @return the isFilled value
      */
     public boolean getIsFilled() {
         return isFilled;
@@ -121,7 +118,7 @@ public class Figure {
     /**
      * Sets the value of isFilled.
      *
-     * @param isFilled the isFilled to set
+     * @param isFilled the isFilled value to set
      */
     public void setIsFilled(boolean isFilled) {
         this.isFilled = isFilled;
@@ -130,7 +127,7 @@ public class Figure {
     // Custom methods
     
     /**
-     * Resets position.
+     * Resets the x and y position of figure.
      */
     public void resetPosition() {
         setY(0);
@@ -138,9 +135,9 @@ public class Figure {
     }
 
     /**
-     * Module.
+     * Calculates the module of a figure.
      *
-     * @return return 1
+     * @return 1 by a default figure
      */
     public double module() {
         return 1;

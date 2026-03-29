@@ -1,31 +1,30 @@
 /*
- * Rectangle.java 2026-03-24
- *
+ * Triangle.java 2026-03-29
  *
  * ©Copyright 2026 Carles Conesa Mañosa <a251158cc@correu.escoladeltreball.org>
  *
- * This is free software, licensed under the GNU General Public License v3.
- * See http://www.gnu.org/licenses/gpl.html for more information.
+ * This is free software, licensed under the MIT license.
  */
 
 package figure;
 /**
- * Class description
+ * A class to describe a triangle, including the module, area and perimeter values.
  *
  * @author Carles Conesa Mañosa
  * @version 1.0
- * @since 2026-03-24
+ * @since 2026-03-29
  */
 public class Triangle extends Figure {
     
     // Attributes
-    /** Description of attribute2 */
+
+    /** The base of a triangle */
     private int base;
 
-    /** Description of attribute2 */
+    /** The height of a triangle */
     private int height;
 
-    /** Description of attribute2 */
+    /** A value which says whether a triangle is rounded or not */
     private boolean isRounded = false;
     
     /**
@@ -39,9 +38,8 @@ public class Triangle extends Figure {
         this.isRounded = isRounded;
     }
 
-        /**
-     * Default constructor.
-     * Initializes all attributes with default values.
+    /**
+     * Parameterized constructor.
      */
     public Triangle(int x, int y, int base, int height) {
         super(x, y);
@@ -106,9 +104,9 @@ public class Triangle extends Figure {
     }
 
     /**
-     * Module.
+     * Calculates the module of a triangle.
      *
-     * @return module
+     * @return the module of a triangle
      */
     @Override
     public double module() {
@@ -116,18 +114,18 @@ public class Triangle extends Figure {
     }
 
     /**
-     * Area.
+     * Calculates the area of a triangle.
      *
-     * @return area
+     * @return the area of a triangle
      */
     public double area() {
         return base * height / 2;
     }
 
     /**
-     * Perimeter.
+     * Caclulates the perimeter of a triangle.
      *
-     * @return perimeter
+     * @return the perimeter of a triangle
      */
     public double perimeter() {
         return base * 3;

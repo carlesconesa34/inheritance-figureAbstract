@@ -1,28 +1,27 @@
 /*
- * Oval.java 2026-03-24
- *
+ * Oval.java 2026-03-29
  *
  * ©Copyright 2026 Carles Conesa Mañosa <a251158cc@correu.escoladeltreball.org>
  *
- * This is free software, licensed under the GNU General Public License v3.
- * See http://www.gnu.org/licenses/gpl.html for more information.
+ * This is free software, licensed under the MIT license.
  */
 
 package figure;
 /**
- * Class description
+ * A class to describe an oval, including the module, area and perimeter values.
  *
  * @author Carles Conesa Mañosa
  * @version 1.0
- * @since 2026-03-24
+ * @since 2026-03-29
  */
 public class Oval extends Figure {
     
     // Attributes
-    /** Description of attribute2 */
+
+    /** The radius1 of an oval */
     private int radius1;
 
-    /** Description of attribute2 */
+    /** The radius2 of an oval */
     private int radius2;
     
     /**
@@ -36,8 +35,7 @@ public class Oval extends Figure {
     }
 
     /**
-     * Default constructor.
-     * Initializes all attributes with default values.
+     * Parametized constructor.
      */
     public Oval(int x, int y, int radius1, int radius2) {
         super(x, y);
@@ -48,45 +46,45 @@ public class Oval extends Figure {
     // Getters and Setters
     
     /**
-     * Gets the value of radius1.
+     * Gets the value of the radius1 of an oval.
      *
-     * @return radius1
+     * @return the radius1 of an oval
      */
     public int getRadius1() {
         return radius1;
     }
     
     /**
-     * Sets the value of radius1.
+     * Sets the value of the radius1 of an oval.
      *
-     * @param radius1 the radius1 to set
+     * @param radius1 the radius1 of an oval to set
      */
     public void setRadius1(int radius1) {
         this.radius1 = radius1;
     }
 
     /**
-     * Gets the value of radius2.
+     * Gets the value of the radius2 of an oval
      *
-     * @return radius2
+     * @return the radius2 of an oval
      */
     public int getRadius2() {
         return radius2;
     }
     
     /**
-     * Sets the value of radius2.
+     * Sets the value of the radius2 of an oval
      *
-     * @param radius2 the radius2 to set
+     * @param radius2 the radius2 of an oval to set
      */
     public void setRadius2(int radius2) {
         this.radius2 = radius2;
     }
 
     /**
-     * Module.
+     * Calculates the module of an oval.
      *
-     * @return module
+     * @return the module of and oval
      */
     @Override
     public double module() {
@@ -94,18 +92,18 @@ public class Oval extends Figure {
     }
 
     /**
-     * Area.
+     * Calculates the area of an oval.
      *
-     * @return area
+     * @return the area of an oval
      */
     public double area() {
         return Math.PI * radius1 * radius2;
     }
 
     /**
-     * Perimeter.
+     * Calculates the perimeter of an oval.
      *
-     * @return perimeter
+     * @return the perimeter of an oval
      */
     public double perimeter() {
         return 2 * Math.PI * Math.sqrt((Math.pow(radius1, 2) + Math.pow(radius2, 2)) / 2);
