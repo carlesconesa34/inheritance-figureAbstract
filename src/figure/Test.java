@@ -108,7 +108,7 @@ public class Test {
         System.out.printf("  Àrea:      %.2f%n", circle2.area());
         System.out.printf("  Perímetre: %.2f%n", circle2.perimeter());
 
-        System.out.println("\n=== LLISTA DE FIGURES (polimorfisme) ===\n");
+        System.out.println("\n=== LLISTA DE FIGURES ===\n");
 
         List<Figure> figures = new ArrayList<>();
         figures.add(triangle1);
